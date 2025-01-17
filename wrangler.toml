@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "isekaiob.net"
+CUSTOM_DOMAIN = "isekaiob.com"
 
 [env.dev.vars]
 MODE = "debug"
@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
  routes = [
-   { pattern = "docker.isekaiob.net", custom_domain = true },
-   { pattern = "quay.isekaiob.net", custom_domain = true },
-   { pattern = "gcr.isekaiob.net", custom_domain = true },
-   { pattern = "k8s-gcr.isekaiob.net", custom_domain = true },
-   { pattern = "k8s.isekaiob.net", custom_domain = true },
-   { pattern = "ghcr.isekaiob.net", custom_domain = true },
-   { pattern = "cloudsmith.isekaiob.net", custom_domain = true },
+   { pattern = "docker.isekaiob.com", custom_domain = true },
+   { pattern = "quay.isekaiob.com", custom_domain = true },
+   { pattern = "gcr.isekaiob.com", custom_domain = true },
+   { pattern = "k8s-gcr.isekaiob.com", custom_domain = true },
+   { pattern = "k8s.isekaiob.com", custom_domain = true },
+   { pattern = "ghcr.isekaiob.com", custom_domain = true },
+   { pattern = "cloudsmith.isekaiob.com", custom_domain = true },
  ]
 
 [env.production.vars]
@@ -31,7 +31,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.isekaiob.net", custom_domain = true }
+route = { pattern = "docker-staging.isekaiob.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
