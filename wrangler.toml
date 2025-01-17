@@ -23,7 +23,7 @@ name = "cloudflare-docker-proxy"
    { pattern = "k8s.isekaiob.net", custom_domain = true },
    { pattern = "ghcr.isekaiob.net", custom_domain = true },
    { pattern = "cloudsmith.isekaiob.net", custom_domain = true },
-]
+ ]
 
 [env.production.vars]
 MODE = "production"
